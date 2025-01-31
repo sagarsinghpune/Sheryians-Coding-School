@@ -15,11 +15,12 @@ So, if you're ready to jump into the world of Front-End development and unlock t
 1. make HTML file
 2. make boileplate code
 3. understand tag
-4. understand h1-h6
-5. understand p
-6. understand br
-7. understand img
-8. understand a
-9. understand div
-10. understand id
-11. understand class
+4. understand live server/preview
+5. understand h1-h6
+6. understand p
+7. understand br
+8. understand img
+9. understand a
+10. understand div
+11. understand id
+12. understand class
