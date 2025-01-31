@@ -1,0 +1,25 @@
+HTML Crash Course: Master the Essentials in One Video! Start Your Front-End Journey Today!
+
+Welcome to our HTML Crash Course! In this concise and action-packed video, we will equip you with the most important HTML tags you need to know to start your journey in Front-End development.
+
+No need to get overwhelmed with in-depth HTML knowledge. We'll focus on the essential tags that will lay a solid foundation for your coding adventures. If you're ever in need of a specific tag, simply hop on Google, and you'll find a wealth of resources at your fingertips.
+
+Throughout this course, we'll emphasize practical learning by building a project. This hands-on approach will allow you to grasp the concepts more effectively and see how HTML tags come to life in real-world scenarios.
+
+Remember, the goal here is not to memorize every single tag or get stuck on intricate details. We want you to gain confidence in HTML and feel empowered to explore and experiment. Whenever you encounter a new problem or need to implement a specific feature, turn to Google as your trusty problem-solving companion.
+
+So, if you're ready to jump into the world of Front-End development and unlock the power of HTML, join us in this one-of-a-kind video! Don't miss out on this opportunity to kickstart your coding journey. Get ready to master HTML essentials and become a web development pro in no time!
+
+# Topics to be coverd
+
+1. make HTML file
+2. make boileplate code
+3. understand tag
+4. understand h1-h6
+5. understand p
+6. understand br
+7. understand img
+8. understand a
+9. understand div
+10. understand id
+11. understand class
