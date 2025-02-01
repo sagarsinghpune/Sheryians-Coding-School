@@ -1,0 +1,152 @@
+:root {
+    --primary-color: #2196F3;
+    --secondary-color: #FFC107;
+    --background-color: #F5F6FA;
+}
+
+html-elements {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+.input-group {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+#todoInput {
+    flex: 1;
+    padding: 0.8rem;
+    margin-right: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+#addBtn, #btnEdit, #btnDelete, #btnShare {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+#addBtn:hover, #btnEdit:hover, #btnDelete:hover, #btnShare:hover {
+    background-color: var(--secondary-color);
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    color: var(--primary-color);
+}
+
+.delete-btn {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.delete-btn:hover {
+    background-color: #bb2d3b;
+    transform: scale(1.05);
+}
+
+.stat-card {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+.stat-card h3 {
+    color: var(--primary-color);
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+
+.progress-bar {
+    height: 8px;
+    background-color: #eee;
+    border-radius: 4px;
+    margin: 2rem auto;
+    display: none;
+}
+
+.progress {
+    height: 100%;
+    background-color: var(--primary-color);
+    border-radius: 4px;
+    transition: width 0.3s ease;
+}
+
+.task-input-placeholder {
+    color: #666;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.task-item:last-child {
+    display: flex;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+.progress-bar.active {
+    display: block;
+}
+
+/* Keyboard shortcuts */
+.keyboard-shortcuts button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.25rem;
+    margin: 0.25rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.keyboard-shortcuts button:hover {
+    background-color: var(--secondary-color);
+    transform: scale(1.05);
+}
+
+/* Placeholder text */
+#placeholder {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #ddd;
+    margin-right: 4rem;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Web Page</title>
+</head>
+<body>
+    <h1>Welcome to my website</h1>
+    <p>This is my first HTML page!</p>
+    <a href="https://www.google.com">Click Here</a>
+
+    <br><br><hr><br><br>
+
+    <h2>Unorder List and Order List</h2>
+    <ol>
+        <li>Apple</li>
+        <li>Organe</li>
+        <li>Banana</li>
+    </ol>
+    <ul>
+        <li>Sagar</li>
+        <li>Akash</li>
+        <li>Preeti</li>
+        <ol>
+            <li>Ram</li>
+            <li>Sam</li>
+            <li>kam</li>
+        </ol>
+    </ul>
+
+    <br><br><hr><br><br>
+
+    <a href="http://www.google.com" target="_blank">Visit Example</a>
+    <br><br><hr><br><br>
+    <img src="https://images.unsplash.com/photo-1613323593608-abc90fec84ff?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="simiple pic" width="300">
+    <br><br><hr><br><br>
+    <a href="about.html">Go To About Page</a>
+
+    <br><br><hr><br><br>
+
+    <div style="background-color: crimson; padding: 10px; color: antiquewhite;">
+        <h2>Div Title</h2>
+        <p>Content inside div.</p>
+    </div>
+
+    <br><br><hr><br><br>
+
+    <article>
+        <h2>Blog 011</h2>
+        <p>Blog content here.</p>
+    </article>
+
+    <br><br><hr><br><br>
+
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name">
+        <br>
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="email" placeholder="Enter your email">
+        <br>
+        <label for="pass">Password:</label>
+        <input type="password" name="pass" id="pass" placeholder="Password">
+        <input type="checkbox" name="show" id="show" onclick="myFunction()">Show Password
+        <br>
+        <input type="radio" name="gender" id="male">male
+        <input type="radio" name="gender" id="female">female
+        <br>
+        <button type="submit">Submit</button>
+
+    </form>
+
+    <script>
+        function myFunction() {
+            let x = document.getElementById("pass");
+            if (x.type == "password") {
+                x.type = "text";
+            }
+            else {
+                x.type = "password";
+            }
+        }
+    </script>
+
+</body>
+</html>

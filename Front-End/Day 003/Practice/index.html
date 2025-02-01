@@ -3,14 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Todo App</title>
+    
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="style.css">
+        
 </head>
 <body>
-    <h1>Hey</h1>
-    <h2>Hey</h2>
-    <h3>Hey</h3>
-    <h4>Hey</h4>
-    <h5>Hey</h5>
-    <h6>Hey</h6>
+    <div class="container">
+        <h1>Todo App</h1>
+        
+        <!-- Placeholder text -->
+        <input type="text" id="placeholder" placeholder="Task to add...">
+
+        <!-- Task list and buttons -->
+        <ul id="todoList"></ul>
+
+        <div class="delete-btn">
+            <button class="delete-btn" id="btnDelete">-</button>
+        </div>
+
+        <div class="input-group">
+            <input type="text" id="todoInput" placeholder="Enter task details">
+            <button class="delete-btn" id="btnAddTask">+</button>
+            <!-- Enter key support -->
+            <button class="btnEdit" onclick="toggleEditMode()"><kbd>Alt</kbd>+Enter</button>
+        </div>
+
+        <!-- Stats cards (bottom right) -->
+        <div class="container">
+            <div style="margin-top: 2rem; padding: 1rem; border-radius: 8px;">
+                <h3>Total Tasks</h3>
+                <p id="totalTasks">0</p>
+            </div>
+            <div style="margin-top: 2rem; padding: 1rem; border-radius: 8px;">
+                <h3>Completed Tasks</h3>
+                <p id="progressCount">0%</p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer style="padding: 1rem; background-color: #2196F3; color: white;">
+            <div style="max-width: 800px; margin: 0 auto; border-bottom: 1px solid #ddd;">
+                <h4>Todo App</h4>
+                <p>Version 1.0.0 - Build 2024-03-20</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JS Functions -->
+    <script src="script.js"></script>
 </body>
 </html>
