@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            background-color: crimson;
+            color: aliceblue;
+            width: 500px;
+            height: 400px;
+            padding: 50px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+
+        button[type="submit"] {
+            padding: 5px;
+            
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, obcaecati nobis atque voluptatem veritatis aliquam natus. Tenetur ipsum at saepe id veritatis dolores ab exercitationem?</p>
+    </div> -->
+    <div class="form">
+        <form>
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name" required>
+            <br><br>
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" required >
+            <br><br>
+            <label for="mobile">Mobile: </label>
+            <input type="tel" name="mobile" id="mobile" pattern="[0-9] {10}" required>
+            <br><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
