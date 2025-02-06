@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgrey;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* z-index: 5; */
+}
+
+.contact-form {
+    display: flex;
+    width: 40%;
+    height: 75%;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 30px 30px 20px black;
+    /* z-index: 2; */
+}
+
+@keyframes disaper {
+    from {
+        
+    }
+
+    to {
+        
+    }
+}
+
+.contact-form h1 {
+    margin: 50px 0 30px 0;
+    font-size: 35px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 10px;
+}
+
+form label {
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+form input {
+    height: 15%;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: lightgray;
+    border-style: solid;
+    border-width: 3px;
+    margin-bottom: 25px;
+    transition: all 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+form input:hover, textarea:hover {
+    /* border-style: dashed; */
+    border-color: lightslategray;
+    /* border-width: 1px; */
+}
+
+form input:focus, textarea:focus {
+    /* border-style: solid; */
+    border-color: darksalmon;
+    /* border-width: 2px; */
+    outline: none;
+}
+
+
+form textarea {
+    resize: none;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border-width: 3px;
+    border-color: lightgray;
+    border-style: solid;
+    margin-bottom: 25px;
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+button {
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    height: 15%;
+    font-size: 20px;
+    /* transform: scale(0.9); */
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+button:hover {
+    background-color: rgb(41, 41, 55);
+    /* transform: scale(1.1); */
+    font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,45 @@
+button:hover {
+    background-color: lightskyblue;
+    color: aliceblue;
+}
+
+input:focus {
+    border: 2px solid crimson;
+}
+
+a:active {
+    color: lightseagreen;
+    text-decoration: none;
+}
+
+h1::before {
+    content: "> ";
+    color: orangered;
+}
+
+h1::after {
+    content: " <";
+    color: orangered;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: teal;
+    /* transition: all 2s cubic-bezier(0.19, 1, 0.22, 1) 0.2s; */
+    animation: slide 3s cubic-bezier(0.19, 1, 0.22, 1) 1s infinite both;
+}
+
+/* .box:hover {
+    background-color: tomato;
+    transform: translate3d(50px, 30px, 100px)
+} */
+
+@keyframes slide {
+    0% {transform: translate(0);}
+    50% {transform: translate(200px);
+        background-color: tomato;
+        border-radius: 50%;
+    }
+    100% {transform: translate(0);}
+}
