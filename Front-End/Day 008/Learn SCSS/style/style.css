@@ -1,0 +1,38 @@
+header, .contact {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: lightseagreen;
+  height: 50vh;
+  gap: 15px;
+  padding: 20px;
+}
+header h1, .contact h1 {
+  color: crimson;
+}
+header button, .contact button {
+  background: tan;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px;
+}
+header button:hover, .contact button:hover {
+  background: palegoldenrod;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.contact {
+  background: lightcoral;
+}/*# sourceMappingURL=style.css.map */
