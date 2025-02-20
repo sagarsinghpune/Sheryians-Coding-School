@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+        }
+
+        .parent {
+            width: 60%;
+            background-color: tan;
+            display: grid;
+            grid-template-areas: 
+            "e f b b"
+            "a a b b"
+            "a a c c"
+            "g h c c"
+            ;
+            gap: 1rem;
+            padding: 1rem;
+            box-sizing: border-box;
+        }
+
+        .child {
+            background-color: tomato;
+            aspect-ratio: 1/1;
+            border: 0.125rem solid black;
+        }
+
+        .child-1 {
+            grid-area: a;
+            /* padding-top: 2rem; */
+        }
+
+        .child-2 {
+            grid-area: b;
+        }
+
+        .child-3 {
+            grid-area: c;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child child-1"></div>
+        <div class="child child-2"></div>
+        <div class="child child-3"></div>
+        <!-- <div class="child"></div> -->
+    </div>
+</body>
+</html>
