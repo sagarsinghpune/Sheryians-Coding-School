@@ -1,131 +1,286 @@
-// 1. Age Category Message – Ask the user for their age. If they are
-// under 18, print “You are a minor.” If they are between 18 and 60,
-// print “You are an adult.” If they are above 60, print “You are a
-// senior citizen.”
+// 1. Age Category Message ✅
 
-// let age = Number(prompt("Enter your age: "));
+// var age = 64;
 
 // if (age < 18) {
 //     console.log("You are a minor");
 // } else if (age >= 18 && age <= 60) {
 //     console.log("You are an adult");
 // } else {
-//     console.log("You are a senior citizen");
+//     console.log("You are an senior citizen");
+    
 // }
 
-// ----------------------------------------------------------------------------------- //
+// 2. Even or Odd Sum ✅
 
-// 2. Even or Odd Sum – Take two numbers from the user using
-// prompt(). If the sum of both numbers is even, print “Even Sum”;
-// otherwise, print “Odd Sum.”
+// var a = 4;
+// var b = 6;
 
-// let num1 = Number(prompt("Enter your first number: "));
-// let num2 = Number(prompt("Enter your second number: "));
+// var ans = a + b;
 
-// let ans = num1 + num2;
+// ans % 2 == 0 ? console.log("Even Sum") : console.log("Odd Sum");
 
-// if (ans % 2 == 0) {
-    //     console.log("Even Sum");
-    // } else {
-        //     console.log("Odd Sum");
-        // }
-        
-// ----------------------------------------------------------------------------------- //
-   
-// 3. Character Case Checker – Ask the user for a single character.
-// Check if it's uppercase, lowercase, or neither (not a letter).
+// 3. Character case checker  ✅
 
-// let str = prompt("Enter a single character: ");
+// var cha = "C";
 
-// if (isNaN(str)) {
-//     switch (str) {
-//         case str.toUpperCase():
-//             console.log("Uppercase Character");
-//             break;
+// var ans = parseInt(cha) / parseInt(cha);
+
+// if (isNaN(ans) && cha.toUpperCase() == cha) {
+//     console.log("uppercase");
+// } else if (isNaN(ans) && cha.toLowerCase() == cha) {
+//     console.log("lowercase");
+// } else {
+//     console.log("Neither (Not a letter)")
+// }
+
+// 4. Largest of three number ✅
+
+// var a = 11;
+// var b = 10;
+// var c = 12;
+
+// if (a >= b && a >= c) {
+//     console.log(a);
+// } else if (b >= c) {
+//     console.log(b);
+// } else {
+//     console.log(c);
+// }
+
+// 5. Leap Year Checker ✅
+
+// its a leap if it statisfy any of the one conditoins 1. multiple of 400 or 2. multiple of 4 but not 100
+
+// var year = 200;
+
+// console.log(year % 4); // this should be 0
+// console.log(year % 100); // this should not be 0
+
+// if (year % 4 == 0 && year % 100 !== 0) {
+//     console.log("Leap Year");
+// } else if (year % 400 == 0){
+//     console.log("Leap Year");
+// } else {
+//     console.log("Not Leap Year");
     
-//         case str.toLowerCase():
-//             console.log("Lowercase Character");
-//             break;
-    
-//         default:
-//             console.log("Neither (Not a letter)");
+// }
+
+// 6. Simple Calculator
+
+// var num1 = 5;
+// var num2 = 2;
+
+// var opr = "%";
+
+// if (opr == "+" || opr == "-" || opr == "*" || opr == "/") {
+//     if (opr == "+") {
+//         console.log(num1 + num2);
+//     }
+//     else if (opr == "-") {
+//         console.log(num1 - num2);
+//     }
+//     else if (opr == "*") {
+//         console.log(num1 * num2);
+//     }
+//     else if (opr == "/") {
+//         console.log(num1 / num2);
 //     }
 // } else {
-//     console.log("Neither (Not a letter)");
+//     console.log("Please select correct operator [+, -, *, /]");
+    
 // }
 
-// ----------------------------------------------------------------------------------- //
+// 7. Postivie / Negative or Zero ✅
 
-// 4. Largest of Three Numbers – Take three numbers as input and
-// print the largest number among them without using
-// Math.max().
+// var a = 0
 
-let a = 9
-let b = 9
-let c = 9
+// if (a > 0) {
+//     console.log("Postivie");
+// } else if (a < 0) {
+//     console.log("Negative");
+// } else {
+//     console.log("Zero");
 
-// 1. a > b 2. b > c 3. c > a 4. b > a 5. c > b 6. a > c
+// }
 
-if (a > b) {
-    if (b > c) {
-        console.log(a); 
-    } else if (b < c) {
-        if (a > c) {
-            console.log(a);
-        } else {
-            console.log(c);
-        }
-    }
-} else if (b > c) {
-    if (c > a) {
-        console.log(b);
-    } else if (c < a) {
-        if (b > a) {
-            console.log(b);
-        } else {
-            console.log(a);
-        }
-    }
-} else if (c > a) {
-    if (a > b) {
-        console.log(c);
-    } else if (a < b) {
-        if (c > b) {
-            console.log(c);
-        } else {
-            console.log(b);
-        }
-    }
-} else if (b > a) {
-    if (a > c) {
-        console.log(b);
-    } else if (a < c) {
-        if (b > c) {
-            console.log(b);
-        } else {
-            console.log(c);
-        }
-    } 
-} else if (c > b) {
-    if (b > a) {
-        console.log(c);
-    } else if (b < a) {
-        if (c > a) {
-            console.log(c);
-        } else {
-            console.log(a);
-        }
-    }
-} else if (a > c) {
-    if (c > b) {
-        console.log(a);
-    } else if (c < b) {
-        if (a > b) {
-            console.log(a);
-        } else {
-            console.log(b);
-            
-        }
-    }
-}
+// 8. User Greeting ✅
+
+// var user = "ganesh";
+
+// var time = 24;
+
+// if (time >= 5 && time < 12) {
+//     console.log("Good Morning", user.charAt(0).toUpperCase()+user.slice(1).toLowerCase());
+// } else if (time >= 12 && time < 17) {
+//     console.log("Good Afternoon", user.charAt(0).toUpperCase()+user.slice(1).toLowerCase());
+// } else if (time >= 17 && time < 21) {
+//     console.log("Good Evening", user.charAt(0).toUpperCase()+user.slice(1).toLowerCase());
+// } else if ((time >= 21 && time <= 24) || (time >= 0 && time < 5)) {
+//     console.log("Good Night", user.charAt(0).toUpperCase()+user.slice(1).toLowerCase());
+// } else {
+//     console.log("Enter Valid Time");
+// }
+
+// 9. Traffic Light ✅
+
+// var light = "Yellow"
+
+// if (light.toLowerCase() == "red") {
+//     console.log("Stop!");
+// } else if (light.toLowerCase() == "yellow") {
+//     console.log("Get Ready!");
+// } else if (light.toLowerCase() == "green") {
+//     console.log("Go!");
+// } else {
+//     console.log("Loading.."); 
+// }
+
+// 10. Multiplication Table ✅
+
+// var a = 6;
+
+// for (let i = 1; i <= 10; i++) {
+//     console.log(a + " x " + i + " = " + (a*i));
+// }
+
+// 11. Grade Calculator
+
+// var marks = 45;
+
+// if (marks >= 90 && marks <= 100) {
+//     console.log('A');
+// } else if (marks >= 80 && marks <= 89) {
+//     console.log('B');   
+// } else if (marks >= 70 && marks <= 79) {
+//     console.log('C');   
+// } else if (marks >= 60 && marks <= 69) {
+//     console.log('D');   
+// } else if (marks >= 0 && marks < 60) {
+//     console.log('E');
+// } else {
+//     console.log("Enter valid marks");
+// }
+
+
+// 12. Simple login system ✅
+
+// var admin_username = "sagarsingh"
+// var admin_password = "loophealth"
+
+// var username = prompt("Enter your username");
+// var password = prompt("Enter your password");
+
+// if (admin_username == username && admin_password == password) {
+//     console.log("Login Successful");
+// } else {
+//     console.log("Try Again");
+// }
+
+// 13. Swapping without thrid variable ✅
+
+// first method: using array
+
+// var a = 12;
+// var b = 20;
+
+// // [a, b] = [b, a]
+
+// // console.log(a, b);
+
+// // second method: with additions
+
+// a = a + b; // 12 + 20 = 32
+// b = a - b; // 32 - 20 = 12
+// a = a - b; // 32 - 12 = 20
+
+// console.log(a, b);
+
+// 14. FizzBuzz (Multiple of both) ✅
+
+// var FizzBuzz = (value) => {
+//     if (value % 3 == 0 && value % 5 == 0) {
+//         console.log("FizzBuzz");
+//     } else if (value % 3 == 0) {
+//         console.log("Fizz");
+//     } else if (value % 5 == 0) {
+//         console.log("Buzz");
+//     } else {
+//         console.log(value);
+//     }
+// }
+
+// var number = 40;
+
+// FizzBuzz(number);
+
+// 15. Number Reversal (3 digit) ✅
+
+// var num = 123;
+
+// num = num.toString();
+
+// var arr = new Array(3);
+
+// for (var i = 0; i < arr.length; i++) {
+//     arr[i] = num.charAt(i);
+// }
+
+// var newArr = arr.reverse().reduce(function (acc, val) {
+//     return acc + val // string so + means concat
+// })
+
+// newArr = parseInt(newArr);
+
+// 16. Sum of digits ✅
+
+// var num = 1235;
+
+// num = num.toString();
+
+// var arr = new Array(num.length)
+
+// for (let i = 0; i < arr.length; i++) {
+//     arr[i] = parseInt(num.charAt(i));
+// }
+
+// var newArr = arr.reduce(function (acc, val) {
+//     return acc + val
+// }, 0)
+
+// 17. Palindrome Check - If word read forward and backward as same ✅
+
+// var str = "oyo";
+
+// var arr = new Array(str.length);
+
+// for (let i = 0; i < arr.length; i++) {
+//     arr[i] = str.charAt(i);
+// }
+
+// var newArr = arr.reverse().reduce(function (acc, val) {
+//     return acc + val; // string so + mean concat
+// })
+
+// if (str === newArr) {
+//     console.log("Palindrome");
+// } else {
+//     console.log("Not a Palindrome");
+// }
+
+// 18. Reverse without string method ✅
+
+// var num = 456;
+// var reverseNum = 0;
+// var lastDigitNum;
+
+// while (num != 0) {
+//     lastDigitNum = num % 10;
+//     reverseNum = (reverseNum * 10) + lastDigitNum
+//     num = parseInt(num / 10)
+// }
+
+// console.log(reverseNum);
+
+// 19. Find the second largest number (without sort() or math.max())
 
