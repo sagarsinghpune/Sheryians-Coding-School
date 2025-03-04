@@ -38,15 +38,3 @@ console.log("Hello World!");
 // arr.forEach(function(val){
 //     obj[val] === undefined ? obj[val] = 1 : obj[val]++
 // })
-
-
-
-
-
-
-
-
-
-
-
-
