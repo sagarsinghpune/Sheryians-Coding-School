@@ -65,12 +65,3 @@ var ans = limiter(() => console.log("hello"), 3)
 
 ans();
 ans();
-
-
-
-
-
-
-
-
-
