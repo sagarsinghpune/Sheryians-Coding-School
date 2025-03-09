@@ -47,19 +47,19 @@
 
 // 4. Implement a function that throttles another function (HOF + Closures). ✅
 
-function throttles(func, delay) {
-    let lastCalled = 0
-    return function () {
-        let current = Date.now();
-        if (current - lastCalled >= delay) {
-            lastCalled = current;
-            func()
-        }
-    }
-}
+// function throttles(func, delay) {
+//     let lastCalled = 0
+//     return function () {
+//         let current = Date.now();
+//         if (current - lastCalled >= delay) {
+//             lastCalled = current;
+//             func()
+//         }
+//     }
+// }
 
-var ans = throttles(function(){
-    console.log("Run only once");
-}, 2000)
+// var ans = throttles(function(){
+//     console.log("Run only once");
+// }, 2000)
 
-ans();
+// ans();
